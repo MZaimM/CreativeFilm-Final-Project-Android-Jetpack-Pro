@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".ui.movies.MoviesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMovies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:listitem="@layout/items_movies"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_addButtonColorNormal="#FF5722"
+        app:fab_addButtonColorPressed="#FF9800"
+        app:fab_addButtonPlusIconColor="@android:color/white"
+        android:layout_gravity="bottom|end"
+        app:fab_labelStyle="@style/customFab"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FF9800"
+            app:fab_colorPressed="#FFC107"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_baseline_favorite_24"
+            android:id="@+id/fab1"
+            app:fab_title="Favorite"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FF9800"
+            app:fab_colorPressed="#FFC107"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_baseline_filter_list_24"
+            android:id="@+id/fab2"
+            app:fab_title="Newest"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FF9800"
+            app:fab_colorPressed="#FFC107"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_baseline_filter_list_24"
+            android:id="@+id/fab3"
+            app:fab_title="Top Rated"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</FrameLayout>

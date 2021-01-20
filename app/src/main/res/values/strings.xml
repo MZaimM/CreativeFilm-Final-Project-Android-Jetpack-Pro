@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Creative Film</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="movies">Movies</string>
+    <string name="tvShows">TV Shows</string>
+    <string name="title">Judul Film</string>
+    <string name="genre">Genre</string>
+    <string name="voteAverage">8.0</string>
+    <string name="releaseDate">release date</string>
+    <string name="overview">Overview</string>
+    <string name="description">Description</string>
+    <string name="share">SHARE</string>
+    <string name="otherMovie">Other Movie</string>
+    <string name="otherTvShows">Other TV Shows</string>
+    <string name="image">image</string>
+    <string name="share_text">Segera lihat Film %s hanya di TheMovieDB.com</string>
+    <string name="start">8.0</string>
+    <string name="todo">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="message_undo">Apakah anda ingin membatalkannya?</string>
+    <string name="ok">OK</string>
+
+</resources>
